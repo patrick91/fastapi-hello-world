@@ -17,3 +17,8 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+
+[tool.pdm.scripts]
+start = "uvicorn main:app --host 0.0.0.0 {args}"
+
